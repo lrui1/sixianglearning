@@ -67,6 +67,6 @@ public class HomeFragment extends Fragment {
         WebSettings settings = webview.getSettings();
         settings.setJavaScriptEnabled(true);
         //打开的网址
-        webview.loadUrl("https://www.jmu.edu.cn/");
+        webview.loadUrl("http://47.245.90.4/res/");
     }
 }

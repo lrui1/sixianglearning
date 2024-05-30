@@ -108,12 +108,6 @@ public class VideoListActivity extends Activity {
                 JSONObject jsonObj = jsonArray.getJSONObject(i);
                 if (jsonObj.getInt("chapterId") == chapterId){
                     bean.chapterId = jsonObj.getInt("chapterId");
-
-                    /*bean.videoId = Integer.parseInt(jsonObj.getString("videoId"));
-                    bean.title = jsonObj.getString("title");
-                    bean.secondTitle = jsonObj.getString("secondTitle");
-                    bean.videoPath = jsonObj.getString("videoPath");
-                    videoList.add(bean);*/
                     String ss =jsonObj.getString("data");
                     jsonArray1 = new JSONArray(ss);
                     for (int j=0;j<jsonArray1.length();j++){
@@ -194,7 +188,7 @@ public class VideoListActivity extends Activity {
                 tvIntro.setTextColor(Color.parseColor("#000000"));
                 tvVideo.setTextColor(Color.parseColor("#000000"));
                 tvCourse.setTextColor(Color.parseColor("#FFFFFF"));
-                String path="http://47.245.90.4/res/pdfjs/web/viewer.html?file=../../pdf/" + chapterId + ".pdf";
+                String path="http://47.245.90.4/res/pdf/" + chapterId + ".html";
                 webViewInfo.getSettings().setJavaScriptEnabled(true);
                 webViewInfo.loadUrl(path);
             }

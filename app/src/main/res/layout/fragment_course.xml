@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
             android:gravity="center_vertical"
-            android:text="《毛概》全书十五章的电子课件"
+            android:text="《思想道德与法治》全书六章的课程学习资源"
             android:textSize="16sp"
             android:textColor="@android:color/black"
             android:textStyle="bold"/>

@@ -85,10 +85,10 @@ public class ReadBookActivity extends Activity {
     }
     private void loadPage() {
         switch (vId){
-            case "2131231154":webView.loadUrl("http://47.245.90.4/res/classic/classic_1.html?page="+currentPage);break;
-            case "2131231155":webView.loadUrl("http://47.245.90.4/res/classic/classic_2.html?page="+currentPage);break;
-            case "2131231156":webView.loadUrl("http://47.245.90.4/res/classic/classic_3.html?page="+currentPage);break;
-            case "2131231157":webView.loadUrl("http://47.245.90.4/res/classic/classic_4.html?page="+currentPage);break;
+            case "2131231155":webView.loadUrl("http://47.245.90.4/res/classic/classic_1.html?page="+currentPage);break;
+            case "2131231156":webView.loadUrl("http://47.245.90.4/res/classic/classic_2.html?page="+currentPage);break;
+            case "2131231157":webView.loadUrl("http://47.245.90.4/res/classic/classic_3.html?page="+currentPage);break;
+            case "2131231158":webView.loadUrl("http://47.245.90.4/res/classic/classic_4.html?page="+currentPage);break;
         }
     }
 }

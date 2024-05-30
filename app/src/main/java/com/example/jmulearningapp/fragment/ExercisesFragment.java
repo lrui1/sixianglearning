@@ -49,32 +49,32 @@ public class ExercisesFragment extends Fragment {
             bean.id=(i+1);
             switch (i){
                 case 0:
-                    bean.title="第1章 毛泽东思想及其历史地位";
+                    bean.title="第1章 领悟人生真谛 把握人生方向";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_1);
                     break;
                 case 1:
-                    bean.title="第2章 新民主主义革命理论";
+                    bean.title="第2章 追求远大理想 坚定崇高信念";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_2);
                     break;
                 case 2:
-                    bean.title="第3章 社会主义改造理论";
+                    bean.title="第3章 继承优良传统 弘扬中国精神";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_3);
                     break;
                 case 3:
-                    bean.title="第4章 社会主义建设道路初步探索的理论成果";
+                    bean.title="第4章 明确价值要求 践行价值准则";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_4);
                     break;
                 case 4:
-                    bean.title="第5章 邓小平理论";
+                    bean.title="第5章 遵守道德规范 锤炼道德品格";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_1);
                     break;
                 case 5:
-                    bean.title="第6章 三个代表”重要思想”";
+                    bean.title="第6章 学习法治思想 提升法治素养";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_2);
                     break;

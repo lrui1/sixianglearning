@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -33,6 +34,7 @@ import java.util.List;
  * @date 2024/5/30 14:55
  */
 public class ExercisesDetailActivity extends Activity {
+    private Button btn_submit;
     private TextView tv_back;
     private TextView tv_main_title;
     private RelativeLayout title_bar;
@@ -124,9 +126,21 @@ public class ExercisesDetailActivity extends Activity {
                 Toast.makeText(ExercisesDetailActivity.this,"考试结束，共计"+score+"分",Toast.LENGTH_SHORT).show();
                 time.cancel();
                 ExercisesDetailActivity.this.finish();
-
             }
         });
+
+        // 点击提交按钮结束考试
+        btn_submit = findViewById(R.id.btn_submit);  // Initialize the submit button
+        btn_submit.setOnClickListener(new View.OnClickListener() {  // Set the click listener
+            @Override
+            public void onClick(View v) {
+                time.cancel();  // Cancel the timer
+                Toast.makeText(ExercisesDetailActivity.this,"考试结束，共计"+score+"分",Toast.LENGTH_SHORT).show();
+                ExercisesDetailActivity.this.finish();  // Finish the activity
+            }
+        });
+
+
         adapter = new ExercisesDetailListItemAdapter(ExercisesDetailActivity.this,
                 new ExercisesDetailListItemAdapter.OnSelectListener() {
                     @Override
@@ -173,6 +187,7 @@ public class ExercisesDetailActivity extends Activity {
                                 break;
                             case 2:
                                 iv_b.setImageResource(R.drawable.exercises_right_icon);
+                                score+=10;
                                 break;
                             case 3:
                                 iv_b.setImageResource(R.drawable.exercises_error_icon);
@@ -205,6 +220,7 @@ public class ExercisesDetailActivity extends Activity {
                                 break;
                             case 3:
                                 iv_c.setImageResource(R.drawable.exercises_right_icon);
+                                score+=10;
                                 break;
                             case 4:
                                 iv_c.setImageResource(R.drawable.exercises_error_icon);
@@ -237,6 +253,7 @@ public class ExercisesDetailActivity extends Activity {
                                 break;
                             case 4:
                                 iv_d.setImageResource(R.drawable.exercises_right_icon);
+                                score+=10;
                                 break;
                         }
                         AnalysisUtils.setABCDEnable(false, iv_a, iv_b, iv_c, iv_d);

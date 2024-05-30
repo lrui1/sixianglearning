@@ -24,18 +24,27 @@
                  tools:context="com.example.and116.MainActivity"
                  tools:ignore="MergeRootFrame" />
 
-    <!--android:visibility="gone"-->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:id="@+id/rv_list"
         />
-    <!--<ListView
-        android:id="@+id/lv_list"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:divider="@null"/>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.widget.Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:backgroundTint="@color/colorAccent"/>
+    </FrameLayout>
     <TextView
         android:id="@+id/tv_di"
         android:text="第一页"

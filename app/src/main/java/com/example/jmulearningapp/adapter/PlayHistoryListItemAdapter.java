@@ -69,22 +69,22 @@ public class PlayHistoryListItemAdapter extends BaseAdapter {
             holder.tvVideoTitle.setText(object.secondTitle);
             switch (object.chapterId){
                 case 1:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_1_icon);
+                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_1);
                     break;
                 case 2:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_2_icon);
+                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_2);
                     break;
                 case 3:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_3_icon);
+                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_3);
                     break;
                 case 4:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_4_icon);
+                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_4);
                     break;
                 case 5:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_5_icon);
+                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_5);
                     break;
                 case 6:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_6_icon);
+                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_6);
                     break;
                 default:
                     holder.ivVideoIcon.setImageResource(R.drawable.banner_3);
