@@ -22,7 +22,7 @@ public class ToolsFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.activity_splash, container, false);
+        View root = inflater.inflate(R.layout.activity_entry, container, false);
         final TextView textView = root.findViewById(R.id.text_tools);
         TextView tv_version = root.findViewById(R.id.tv_version);
         try {

@@ -84,6 +84,7 @@ public class MyinfoFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         int viewId = v.getId();
+
         if (viewId == R.id.rl_course_history) {
             if (AnalysisUtils.readLoginStatus(getActivity())){
                 //跳转到播放记录页面

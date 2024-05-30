@@ -89,7 +89,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
             android:layout_toRightOf="@id/iv_book1_icon"
-            android:text="《共产党宣言》"
+            android:text="《与未来同行》"
             android:textColor="#A3A3A3"
             android:textSize="16sp" />
         <ImageView
@@ -203,7 +203,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="25dp"
             android:layout_toRightOf="@id/iv_book4_icon"
-            android:text="《论共产党员的修养》"
+            android:text="《公民道德建设实施纲要》"
             android:textColor="#A3A3A3"
             android:textSize="16sp" />
         <ImageView

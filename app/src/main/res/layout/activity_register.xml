@@ -7,7 +7,7 @@
     android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register_bg"
+    android:background="@color/colorAccent"
     android:orientation="vertical">
     <include layout="@layout/main_title_bar"></include><!--引入标题栏-->
     <ImageView
@@ -69,7 +69,7 @@
         android:textColor="#000000"
         android:textColorHint="#a3a3a3"
         android:textSize="14sp"/>
-    <Button
+    <android.widget.Button
         android:id="@+id/btn_register"
         android:layout_width="fill_parent"
         android:layout_height="40dp"

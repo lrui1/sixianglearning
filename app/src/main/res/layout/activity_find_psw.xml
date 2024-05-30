@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_bg"
+    android:background="@color/colorAccent"
     android:orientation="vertical">
     <!--找回密码需要设置标题栏-->
     <include layout="@layout/main_title_bar" />
@@ -84,7 +84,7 @@
         android:textColorHint="#a3a3a3"
         android:textSize="18sp"
         android:visibility="gone"/>
-    <Button
+    <android.widget.Button
         android:id="@+id/btn_validate"
         android:layout_width="match_parent"
         android:layout_height="40dp"
