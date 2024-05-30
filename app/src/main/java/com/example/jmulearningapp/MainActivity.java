@@ -3,6 +3,7 @@ package com.example.jmulearningapp;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -73,6 +74,39 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         setSelectStatus(3);
         LinearLayout line=(LinearLayout) findViewById(R.id.line_all);
         line.setVisibility(View.INVISIBLE);
+    }
+
+    /**
+     * 菜单中控件的点击事件写在onSupportNavigateUp函数时会被调用
+     * 侧边导航栏监听
+     */
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        LinearLayout line=(LinearLayout) findViewById(R.id.line_all);
+        line.setVisibility(View.INVISIBLE);
+        return NavigationUI.navigateUp(navController, mAppBarConfiguration)
+                || super.onSupportNavigateUp();
+    }
+
+    /**
+     * 底部导航栏监听
+     */
+    @Override
+    public void onClick(View v) {
+        int viewId = v.getId();
+        if (viewId == R.id.main_bottom_bar) {
+            setSelectStatus(3);
+        } else if (viewId == R.id.bottom_bar_course_btn) {
+            // getSupportFragmentManager().beginTransaction().add(R.id.main_body,new CourseFragment()).commit();
+            setSelectStatus(0);
+        } else if (viewId == R.id.bottom_bar_exercises_btn) {
+            // getSupportFragmentManager().beginTransaction().add(R.id.main_body,new ExercisesFragment()).commit();
+            setSelectStatus(1);
+        } else if (viewId == R.id.bottom_bar_read_btn) {
+            // getSupportFragmentManager().beginTransaction().add(R.id.main_body,new MyinfoFragment()).commit();
+            setSelectStatus(2);
+        }
     }
 
     private void initView() {
@@ -181,8 +215,4 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
     }
 
-    @Override
-    public void onClick(View v) {
-
-    }
 }
