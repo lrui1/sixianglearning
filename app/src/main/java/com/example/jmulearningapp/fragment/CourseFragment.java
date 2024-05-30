@@ -115,6 +115,7 @@ public class CourseFragment extends Fragment {
     private void initView(View view ){
         rv_list=view.findViewById(R.id.rv_list);
         adapter=new CourseListItemAdapter(getActivity());
+        // todo 进行合法性检查
         adapter.setData(rList);
         rv_list.setLayoutManager(new GridLayoutManager(getActivity(),3));
         rv_list.setAdapter(adapter);

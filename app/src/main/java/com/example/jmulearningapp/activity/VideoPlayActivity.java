@@ -41,20 +41,15 @@ public class VideoPlayActivity extends Activity {
         videoView = findViewById(R.id.videoView);
         controller = new MediaController(this);
         videoView.setMediaController(controller);
-        play();
-    }
 
-    private void play() {
         if(TextUtils.isEmpty(videoPath)){
             Toast.makeText(this,"本地没有此视频，暂无法播放", Toast.LENGTH_SHORT).show();
             return;
         }
-        //String uri = "android.resource://" + getPackageName() + "/" + R.raw.video11;
         Log.i("Video",videoPath);
         String uri = videoPath;
         Uri uri1 = Uri.parse(uri);
         videoView.setVideoURI(uri1);
-        //videoView.setVideoPath(uri);
         videoView.start();
     }
     @Override

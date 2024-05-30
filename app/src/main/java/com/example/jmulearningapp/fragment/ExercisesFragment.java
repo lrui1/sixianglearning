@@ -44,7 +44,7 @@ public class ExercisesFragment extends Fragment {
     //章节习题信息
     private void initData(){
         beanlist = new ArrayList<ExercisesBean>();
-        for (int i=0;i<10;i++){
+        for (int i=0;i<6;i++){
             ExercisesBean bean = new ExercisesBean();
             bean.id=(i+1);
             switch (i){
@@ -75,26 +75,6 @@ public class ExercisesFragment extends Fragment {
                     break;
                 case 5:
                     bean.title="第6章 三个代表”重要思想”";
-                    bean.content="共计10题";
-                    bean.background=(R.drawable.exercises_bg_2);
-                    break;
-                case 6:
-                    bean.title="第7章 科学发展观";
-                    bean.content="共计10题";
-                    bean.background=(R.drawable.exercises_bg_3);
-                    break;
-                case 7:
-                    bean.title="第8章 习近平新时代中国特色社会主义思想";
-                    bean.content="共计10题";
-                    bean.background=(R.drawable.exercises_bg_4);
-                    break;
-                case 8:
-                    bean.title="第9章 中国特色社会主义总任务";
-                    bean.content="共计10题";
-                    bean.background=(R.drawable.exercises_bg_1);
-                    break;
-                case 9:
-                    bean.title="第10章 全面深化改革";
                     bean.content="共计10题";
                     bean.background=(R.drawable.exercises_bg_2);
                     break;

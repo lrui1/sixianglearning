@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@color/colorAccent"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -82,7 +82,7 @@
                     android:id="@+id/bottom_bar_image_main"
                     android:src="@drawable/main_teach_icon"/>
             </RelativeLayout>
-            <!--专题课件-->
+            <!--课程学习-->
             <RelativeLayout
                 android:layout_weight="1"
                 android:id="@+id/bottom_bar_course_btn"
@@ -97,7 +97,7 @@
                     android:layout_marginBottom="3dp"
                     android:gravity="center"
                     android:singleLine="true"
-                    android:text="专题课件"
+                    android:text="课程学习"
                     android:textColor="#666666"
                     android:textSize="14sp"/>
                 <ImageView
@@ -108,34 +108,6 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="3dp"
                     android:id="@+id/bottom_bar_image_course"
-                    android:src="@drawable/main_course_icon"/>
-            </RelativeLayout>
-            <!--教学视频-->
-            <RelativeLayout
-                android:layout_weight="1"
-                android:id="@+id/bottom_bar_video_btn"
-                android:layout_width="0dp"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/bottom_bar_text_video"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="3dp"
-                    android:gravity="center"
-                    android:singleLine="true"
-                    android:text="教学视频"
-                    android:textColor="#666666"
-                    android:textSize="14sp"/>
-                <ImageView
-                    android:layout_width="27dp"
-                    android:layout_height="27dp"
-                    android:layout_above="@+id/bottom_bar_text_video"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="3dp"
-                    android:id="@+id/bottom_bar_image_video"
                     android:src="@drawable/main_course_icon"/>
             </RelativeLayout>
             <!--在线测试-->

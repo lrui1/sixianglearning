@@ -48,8 +48,6 @@ public class HomeFragment extends Fragment {
         if (getArguments() != null) {
             mContentText = getArguments().getString(ARG_SHOW_TEXT);
         }
-
-
     }
 
     @Override
@@ -69,6 +67,6 @@ public class HomeFragment extends Fragment {
         WebSettings settings = webview.getSettings();
         settings.setJavaScriptEnabled(true);
         //打开的网址
-        webview.loadUrl("http://47.100.53.114/plan/bg.html");
+        webview.loadUrl("https://www.jmu.edu.cn/");
     }
 }
