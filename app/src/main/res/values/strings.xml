@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">思想道德学习通</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">思想道德学习通</string>
+    <string name="nav_header_subtitle">欢迎来到思想道德学习通</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">设置</string>
+
+    <string name="menu_home">主页</string>
+    <string name="menu_gallery">我的收藏</string>
+    <string name="menu_slideshow">意见反馈</string>
+    <string name="menu_contact">联系我们</string>
+    <string name="menu_tools">版本信息</string>
+    <string name="menu_share">分享</string>
+    <string name="menu_send">退出</string>
+</resources>
