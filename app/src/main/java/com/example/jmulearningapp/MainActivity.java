@@ -175,9 +175,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                 bottom_bar_image_main.setImageResource(R.drawable.main_my_icon);
 
                 getSupportFragmentManager().beginTransaction().replace(R.id.main_body,new CourseFragment()).commit();
-                tv_main_title.setText("课程");
+                tv_main_title.setText("课程学习");
                 line.setVisibility(View.VISIBLE);
-                toolbar.setTitle("课程");
+                toolbar.setTitle("课程学习");
                 break;
             case 2:
                 bottom_bar_image_exercises.setImageResource(R.drawable.main_exercises_icon_selected);

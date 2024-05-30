@@ -85,8 +85,7 @@
         <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/wb_1"
-            >
+            android:id="@+id/wb_1">
         </WebView>
         <ScrollView
             android:id="@+id/sv_chapter_intro"

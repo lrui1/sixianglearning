@@ -112,7 +112,7 @@ public class ExercisesDetailActivity extends Activity {
         tv_main_title = findViewById(R.id.tv_main_title);
         tv_main_title.setText(title);
         title_bar = findViewById(R.id.title_bar);
-        title_bar.setBackgroundColor(Color.parseColor("#30B4FF"));
+        title_bar.setBackgroundColor(Color.parseColor("#D81B60"));
         //
         tv_di = findViewById(R.id.tv_di);
         rv_list = findViewById(R.id.rv_list);

@@ -86,33 +86,6 @@ public class PlayHistoryListItemAdapter extends BaseAdapter {
                 case 6:
                     holder.ivVideoIcon.setImageResource(R.drawable.chapter_6_icon);
                     break;
-                case 7:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_7_icon);
-                    break;
-                case 8:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_8_icon);
-                    break;
-                case 9:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_9_icon);
-                    break;
-                case 10:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_10_icon);
-                    break;
-                case 11:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_11_icon);
-                    break;
-                case 12:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_12_icon);
-                    break;
-                case 13:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_13_icon);
-                    break;
-                case 14:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_14_icon);
-                    break;
-                case 15:
-                    holder.ivVideoIcon.setImageResource(R.drawable.chapter_15_icon);
-                    break;
                 default:
                     holder.ivVideoIcon.setImageResource(R.drawable.banner_3);
                     break;

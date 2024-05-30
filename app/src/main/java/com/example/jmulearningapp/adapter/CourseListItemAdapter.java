@@ -82,33 +82,6 @@ public class CourseListItemAdapter extends RecyclerView.Adapter<com.example.jmul
                 case 6:
                     holder.ivCourseImg.setImageResource(R.drawable.chapter_6_icon);
                     break;
-                case 7:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_7_icon);
-                    break;
-                case 8:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_8_icon);
-                    break;
-                case 9:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_9_icon);
-                    break;
-                case 10:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_10_icon);
-                    break;
-                case 11:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_11_icon);
-                    break;
-                case 12:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_12_icon);
-                    break;
-                case 13:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_13_icon);
-                    break;
-                case 14:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_14_icon);
-                    break;
-                case 15:
-                    holder.ivCourseImg.setImageResource(R.drawable.chapter_15_icon);
-                    break;
             }
             holder.ivCourseImg.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -193,9 +194,10 @@ public class VideoListActivity extends Activity {
                 tvIntro.setTextColor(Color.parseColor("#000000"));
                 tvVideo.setTextColor(Color.parseColor("#000000"));
                 tvCourse.setTextColor(Color.parseColor("#FFFFFF"));
-                String path="http://47.100.53.114/course/web/viewer.html?file=../"+chapterId+".pdf";
+                String path="http://47.245.90.4/res/pdfjs/web/viewer.html?file=../../pdf/" + chapterId + ".pdf";
                 webViewInfo.getSettings().setJavaScriptEnabled(true);
-                webViewInfo.loadUrl(path);}
+                webViewInfo.loadUrl(path);
+            }
         });
         tvVideo.setOnClickListener(new View.OnClickListener() {
             @Override

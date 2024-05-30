@@ -38,7 +38,7 @@ public class ReadBookActivity extends Activity {
         tv_save = findViewById(R.id.tv_save);
         title_bar = findViewById(R.id.title_bar);
         tv_main_title.setText("经典阅读");
-        title_bar.setBackgroundColor(Color.parseColor("#30B4FF"));
+        title_bar.setBackgroundColor(Color.parseColor("#D81B60"));
 
         webView=findViewById(R.id.wv_list);
         webView.getSettings().setJavaScriptEnabled(true);
