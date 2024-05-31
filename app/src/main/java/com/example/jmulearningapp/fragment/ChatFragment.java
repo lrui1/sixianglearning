@@ -32,7 +32,6 @@ public class ChatFragment extends Fragment {
         final EditText mFeedBackEditText = (EditText) root.findViewById(R.id.fee_back_edit);
         Button mSendFeedBackButton = (Button) root.findViewById(R.id.feed_back_btn);
         mSendFeedBackButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 final String content = mFeedBackEditText.getText().toString();
